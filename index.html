@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Biblioteca Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+<div id="menu" class="card">
+    <h1>¿Qué deseas hacer?</h1>
+
+    <button onclick="mostrarLogin()">Iniciar sesión</button>
+    <button onclick="mostrarRegistro()">Registrarse</button>
+</div>
+
+
+<div id="loginBox" class="card hidden">
+    <h2>Iniciar sesión</h2>
+
+    <input type="text" id="loginUsuario" placeholder="Usuario">
+    <input type="password" id="loginPassword" placeholder="Contraseña">
+
+    <button onclick="login()">Entrar</button>
+    <button onclick="volverMenu()">Volver</button>
+</div>
+
+
+<div id="registerBox" class="card hidden">
+    <h2>Registrar usuario</h2>
+
+    <input type="text" id="regUsuario" placeholder="Usuario">
+    <input type="password" id="regPassword" placeholder="Contraseña">
+
+    <button onclick="registrar()">Registrar</button>
+    <button onclick="volverMenu()">Volver</button>
+</div>
+
+
+<div id="libraryBox" class="card hidden">
+    <h2> Biblioteca</h2>
+
+    <div class="books">
+        <div class="book-card">
+            <h3>El Principito</h3>
+            <p>Antoine de Saint-Exupéry</p>
+        </div>
+
+        <div class="book-card">
+            <h3>Harry Potter</h3>
+            <p>J.K. Rowling</p>
+        </div>
+
+        <div class="book-card">
+            <h3>Don Quijote</h3>
+            <p>Miguel de Cervantes</p>
+        </div>
+    </div>
+
+    <button onclick="logout()">Cerrar sesión</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

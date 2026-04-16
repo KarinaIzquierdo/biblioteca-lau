@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+
+    /* fondo rosado suave */
+    background: linear-gradient(135deg, #ffe4f1, #f8c8dc);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TARJETAS */
+.card {
+    width: 340px;
+    padding: 25px;
+    background: #fff;
+
+    border-radius: 18px;
+
+    /* sombra suave */
+    box-shadow: 0 12px 30px rgba(255, 105, 180, 0.25);
+
+    text-align: center;
+
+    border: 2px solid #ffd1e8;
+}
+
+/* INPUTS */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+
+    border-radius: 10px;
+    border: 1px solid #f3b6d6;
+
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid #ff69b4;
+    box-shadow: 0 0 5px #ffb6d9;
+}
+
+/* BOTONES */
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #ff69b4;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff85c1;
+    transform: scale(1.05);
+}
+
+/* LIBROS */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.book-card {
+    background: #ffe4f1;
+    padding: 10px;
+    border-radius: 12px;
+    width: 120px;
+
+    border: 1px solid #ffb6d9;
+}
+
+/* ocultar secciones */
+.hidden {
+    display: none;
+}
